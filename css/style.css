@@ -297,13 +297,10 @@
 
 .banho_tosa_esq {
   text-align: start;
-  font-size: 18px;
-  justify-content: space-around;
   display: table-column;
-  text-align: left;
-  width: 100%;
-  font-size: 15px;
-  margin-bottom: 10px;
+  height: 260px;
+  font-size: 18px;
+  margin-bottom: 60px;
 }
 
 .section_title3 {

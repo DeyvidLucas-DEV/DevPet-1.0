@@ -10,7 +10,7 @@ Ao explorar o site, você encontrará uma ampla gama de serviços e produtos pro
 
 
 
-![Logo](https://dochub.com/contageral0113/Noek8bMwxDJ50q2wl7d2qm/captura-de-tela-2023-06-12-150829-png)
+![Logo](https://i.imgur.com/DjmuCUj.png)
 
 
 ## Tecnologias

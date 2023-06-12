@@ -1,0 +1,512 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav_bar {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+ 
+}
+
+.logo {
+  width: 250px;
+}
+
+.mid_bar {
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-around;
+}
+
+.mobileMenuIcon {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+#menu_nav {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 3%;
+  width: 100%;
+  list-style: none;
+  font-size: 17px;
+}
+
+#menu_nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.items_nav {
+  position: relative;
+}
+
+.items_nav::before {
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 4px;
+  scale: 0.1;
+  transform-origin: left;
+  transition: scale 0.25s;
+}
+
+.items_nav:hover::before {
+  scale: 1;
+}
+
+.items_nav:hover {
+  transition: transform 0.5s;
+  transform: scale(1.2);
+}
+
+#botao_contato {
+  color: white;
+  background-color: #f63b4f;
+  text-decoration: none;
+  margin: 0 70px 0 0px;
+  border: 0;
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#botao_contato a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Css do navBar termina aqui */
+
+.titulo_principal {
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+.pesquisar_card {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pesquisar {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.itens_input {
+  width: 100%;
+  height: 70px;
+  gap: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lupa img {
+  width: 45px;
+}
+
+.input_pesq {
+  text-align: center;
+  height: 40px;
+  width: 360px;
+  font-size: 20px;
+}
+
+.container_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+.dogCard {
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+.spitz {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.gridImg {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.container_grid > div:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #ffc632;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.footer_input {
+  width: 250px;
+  height: 30px;
+  border-radius: 12px;
+  padding-left: 10px;
+  border: 0;
+  margin-top: 5px;
+}
+
+.footer_ul_container {
+  display: flex;
+}
+
+.vertical_separator {
+  height: 70px;
+  margin-right: 20px;
+  width: 2px;
+  background-color: white;
+}
+
+.horizontal_separator {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.footer_ul {
+  list-style: none;
+  color: white;
+}
+
+.footer_ul_item {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.footer_ul_item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.footer_copyright {
+  color: white;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modalContainer {
+  width: 70%;
+  height: 700px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.modalContent {
+  display: flex;
+  gap: 20px;
+}
+.dogPresentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.modalImg {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.dogInfo {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+.modalTitle {
+  font-size: 32px;
+}
+.infoTitle {
+  font-size: 28px;
+}
+.closeButton {
+  width: 100px;
+  height: 40px;
+  border: 0;
+  background-color: #f63b4f;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.closeButton:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+@media screen and (max-width: 1260px) {
+  .container_grid {
+    grid-template-columns: repeat(2, 400px);
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1218px) {
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modalTitle {
+    font-size: 28px;
+  }
+
+  .modalImg {
+    width: 300px;
+    height: 250px;
+  }
+
+  .dogInfo {
+    font-size: 18x;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 150px;
+  }
+
+  #botao_contato {
+    margin: 0;
+  }
+
+  #menu_nav {
+    gap: 0%;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #menu_nav {
+    display: none;
+  }
+
+  .nav_bar{
+    justify-content: space-around;
+    height: 80px;
+    background-color: #edf0f0 ;
+}
+
+  .titulo_principal {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin-left: 0%;
+    background-color: #edf0f0 ;
+
+  }
+
+  #botao_contato {
+    display: none;
+  }
+
+  .container_grid {
+    grid-template-columns: repeat(1, 350px);
+  }
+
+  .mobileMenuIcon {
+    display: block;
+  }
+
+  .mobileMenu {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mobileMenuIcon img {
+    width: 40px;
+    height: 40px;
+  }
+  .mobileMenuIcon button {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+
+  #menu_nav_mobile {
+    padding: 15px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #menu_nav_mobile a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  #botao_contato_mobile {
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  #botao_contato_mobile a {
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 15px;
+    padding: 15px;
+
+    font-size: 20px;
+  }
+  .open {
+    display: block;
+    background-color: #edf0f0 ;
+
+    font-size: 20px;
+  }
+
+  .itens_input {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .itens_input input {
+    width: 200px;
+  }
+
+  .itens_input img {
+    margin-right: 6px;
+    width: 30px;
+  }
+  
+  .top_footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .input_container {
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container_grid {
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .modalTitle {
+    font-size: 20px;
+  }
+
+  .modalImg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .dogInfo {
+    font-size: 10x;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+
+  .washPrice{
+    font-size: 15px;
+  }
+
+  .shavePrice{
+    font-size: 15px;
+  }
+
+  .transportPrice{
+    font-size: 15px;
+  }
+
+  .dogFood{
+    font-size: 15px;
+  }
+
+  .hydration{
+    font-size: 15px;
+  }
+
+  .straightening{
+    font-size: 15px;
+  }
+}

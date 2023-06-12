@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/contato.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <title>DevPet</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav_bar">
+        <a href="../index.html"><img src="../imagens/logo_amarelo.png" class="logo" alt="" /></a>
+      <div class="mid_bar">
+        <ul id="menu_nav">
+          <li class="items_nav"><a href="../index.html">HOME</a></li>
+          <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+          <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+          <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+          <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+        </ul>
+      </div>
+      <button id="botao_contato"><a href="contato.html">Contato</a></button>
+
+      <div class="mobileMenuIcon">
+        <button onclick="menuShow()"><img src="../imagens/menu_black_logo.png" alt=""></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobileMenu">
+    <ul id="menu_nav_mobile">
+      <li class="items_nav"><a href="../index.html">HOME</a></li>
+      <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+      <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+      <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+      <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+    </ul> 
+    <button id="botao_contato_mobile"><a href="contato.html">Contato</a></button>
+  </div>
+  <hr>
+  <header>
+    <div class="titulo_contato">
+      <h1>Contato</h1>
+    </div>
+  </header>
+  <main>
+    <div class="formulario">
+      <form action="post" class="form">
+        <form action="/enviar" method="post">
+          <div class="inputContainer"><label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required class="formInput">
+          </div>
+          <div class="inputContainer"><label for="contato">Contato</label>
+            <input type="text" id="contato" name="contato" required class="formInput">
+          </div>
+          <div class="inputContainer"><label for="numero">Número</label>
+            <input type="tel" id="numero" name="numero" required class="formInput">
+          </div>
+          <div class="inputContainer">
+            <label for="mensagem">Mensagem</label><br>
+          <textarea id="mensagem" name="mensagem" class="formInput"></textarea>
+    </div>
+    <input type="submit" value="Enviar" class="submitButton">
+    </form>
+  </main>
+  <script src="../scripts/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/clinica.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_bar">
+        <div>
+          <a href="#"><img src="../imagens/logo.png" class="logo" alt="" /></a>
+        </div>
+        <div class="mid_bar">
+          <ul id="menu_nav">
+            <li class="items_nav"><a href="../index.html">HOME</a></li>
+            <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+            <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+            <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+            <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+          </ul>
+        </div>
+        <button id="botao_contato"><a href="contato.html">Contato</a></button>
+        <!-- Inicio da nav mobile -->
+        <div class="mobileMenuIcon">
+          <button onclick="menuShow()">
+            <img src="../imagens/menu_black_logo.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="mobileMenu">
+        <ul id="menu_nav_mobile">
+          <li class="items_nav"><a href="../index.html">HOME</a></li>
+            <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+            <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+            <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+            <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+            
+          </li>
+        </ul>
+        <button id="botao_contato_mobile">
+          <a href="contato.html">Contato</a>
+        </button>
+      </div>
+      <!-- Fim da nav mobile -->
+      <h2 class="titulo_principal">Clínica</h2>
+      <hr />
+    </nav>
+
+    <header class="header_content">
+      <div class="clinica_informaçoes">
+        <h2 class="serviços_titulo">Veja a abaixo nossos serviços</h2>
+      </div>
+      <div class="conteudo">
+        <!-- esta div serve como uma caixa para outras tres divs-->
+
+        <div class="info">
+          <img src="../imagens/imagemMedico.png" class="info_img" />
+          <p>Acompanhamento médico</p>
+        </div>
+
+        <div class="info">
+          <img src="../imagens/imagemMaqina.png" class="info_img" />
+          <p>Exames laboratoriais e de imagem</p>
+        </div>
+
+        <div class="info">
+          <img src="../imagens/imagemEquipeMedica.png" class="info_img" />
+          <p>Equipe médica 24 horas</p>
+        </div>
+      </div>
+    </header>
+    <hr />
+    <div class="consultas">
+      <div class="apresentaçao_texto">
+        <h2 class="apresentaçao_titulo">E a respeito das consultas?</h2>
+        <p>
+          Na DevPet, entendemos que a saúde dos animais de estimação é uma
+          preocupação fundamental para seus tutores. É por isso que oferecemos
+          um serviço de consultas médicas especializado, tornando a busca por
+          cuidados de saúde acessível e conveniente para os nossos clientes de
+          quatro patas. Nossa logística de consultas médicas é projetada para
+          proporcionar uma experiência tranquila e eficiente. Ao entrar em
+          contato conosco para agendar uma consulta, nossa equipe amigável e
+          experiente o guiará pelo processo. Faremos perguntas pertinentes sobre
+          o estado de saúde do seu pet, ajudando-nos a identificar qualquer
+          preocupação específica e a determinar a urgência do atendimento
+          necessário. Com base nessas informações, faremos o possível para
+          acomodar a sua agenda e encontrar um horário adequado para a consulta
+          médica. Entendemos que a vida é movimentada e, por isso, oferecemos
+          flexibilidade na marcação de consultas, incluindo opções de horários
+          durante a semana e, quando necessário, também aos finais de semana.
+          Uma vez agendada a consulta, nossa equipe se prepara para receber o
+          seu pet com o devido cuidado. Temos uma sala de espera confortável e
+          tranquila para que você e seu animal de estimação se sintam relaxados
+          antes da consulta. Também trabalhamos para minimizar o tempo de
+          espera, respeitando sua agenda e garantindo que a consulta comece no
+          horário agendado. Caso seja necessário, oferecemos a possibilidade de
+          exames complementares em nosso próprio laboratório. Isso significa que
+          você não precisa se preocupar com encaminhamentos externos e atrasos
+          na obtenção de resultados. Nossa equipe está comprometida em agilizar
+          o processo e fornecer resultados rápidos e confiáveis. Ao final da
+          consulta, nossos veterinários fornecerão orientações e recomendações
+          claras sobre o tratamento e os cuidados necessários para a saúde
+          contínua do seu pet. Também esclareceremos quaisquer dúvidas que você
+          possa ter e ofereceremos suporte contínuo após a consulta, caso seja
+          necessário.
+        </p>
+      </div>
+      <div class="apresentaçao_img_div">
+        <img
+          src="../imagens/doutoraComDoguinho.png"
+          class="apresentaçao_img"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="button_01">
+      <button class="botao-agende">Agende sua consulta</button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="top_footer">
+          <div class="input_container">
+            <label for="email"
+              >Cadastre seu email para receber atualizações</label
+            >
+            <input
+              placeholder="Digite seu email"
+              type="email"
+              class="footer_input"
+            />
+          </div>
+          <div class="footer_ul_container">
+            <div class="vertical_separator"></div>
+            <ul class="footer_ul">
+              <li class="footer_ul_item">
+                <a class="footer_ul_item" href="">Sobre</a>
+              </li>
+              <li class="footer_ul_item">
+                <a class="footer_ul_item" href="">Raças</a>
+              </li>
+              <li class="footer_ul_item">
+                <a class="footer_ul_item" href="">Banho & Tosa </a>
+              </li>
+              <li class="footer_ul_item">
+                <a class="footer_ul_item" href="">Clínica</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="horizontal_separator"></div>
+        <div class="bottom_footer"></div>
+        <span>@Copyright | PetDev | Todos os direitos reservados </span>
+      </div>
+    </footer>
+    <script src="../scripts/home.js"></script>
+  </body>
+</html>

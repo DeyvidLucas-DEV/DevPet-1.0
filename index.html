@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>DevPet</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_bar">
+          <a href="index.html"><img src="./imagens/logo_prin.png" class="logo" alt="" /></a>
+       
+          <ul id="menu_nav">
+            <li class="items_nav"><a href="index.html">HOME</a></li>
+            <li class="items_nav"><a href="./pages/sobre.html">SOBRE</a></li>
+            <li class="items_nav"><a href="./pages/raças.html">RAÇAS</a></li>
+            <li classnav="items_nav"><a href="./pages/banho.html">BANHO & TOSA</a></li>
+            <li class="items_nav"><a href="./pages/clinica.html">CLÍNICA</a></li>
+          </ul> 
+      
+        <button id="botao_contato"><a href="./pages/contato.html">Contato</a></button>
+
+        <div class="mobileMenuIcon">
+          <button onclick="menuShow()"><img src="./imagens/menu_black_logo.png" alt=""></button>
+        </div>
+        
+      </div>
+    </nav>
+    <div class="mobileMenu">
+      <ul id="menu_nav_mobile">
+        <li class="items_nav"><a href="index.html">HOME</a></li>
+        <li class="items_nav"><a href="./pages/sobre.html">SOBRE</a></li>
+        <li class="items_nav"><a href="./pages/raças.html">RAÇAS</a></li>
+        <li class="items_nav"><a href="./pages/banho.html">BANHO & TOSA</a></li>
+        <li class="items_nav"><a href="./pages/clinica.html">CLÍNICA</a></li>
+      </ul> 
+      <button id="botao_contato_mobile"><a href="./pages/contato.html">Contato</a></button>
+    </div>
+    <header>
+      <div class="conteudo_header">
+        <div class="texto_esq">
+          <div class="texto">
+            <h1>
+              Amor e cuidado pelos <br />
+              seus companheiros de <br />
+              quatro patas
+            </h1>
+            <div class="btn_orcamento"><a href="#">Fazer Orçamento</a></div>
+          </div>
+        </div>
+        <div class="texto_dir">
+            <div class="imagem_dog">
+                <img src="./imagens/doguinho.png" alt="" />
+              <div >
+            
+          </div>  
+            </div>
+          
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="conteudo">
+        <section class="sobre">
+          <div class="sobre_esq"> 
+            <div>
+                <h2 class="section_title">Sobre</h2>
+                <p>
+                    Somos uma empresa de responsabilidade fundada no ano <br />
+                    de 2023 com o objetivo de passar segurança e confiabilidade
+                    <br />
+                    para que você deixe seu pet mais tranquilizado
+                </p>
+                <div class="btn_sb"><a href="./pages/sobre.html">SAIBA MAIS</a></div>
+            </div>
+          </div>
+          <div class="cachorro_1">
+            <img src="./imagens/logo_sobre.png" alt="" />
+          </div>
+        </section>
+
+        <hr/>
+
+        <section class="racas_dir">
+          <div class="cachorrinho_2">
+            <img src="./imagens/dober.png" alt="">
+        </div>
+
+        <div class="racas_dir2">
+            <h2 class="section_title2">Raças</h2>
+                <p>Nossa franquia trabalha com diversas raças de pets, porém precisamos <br> que antes de você agendar o banho ou tosa do seu pet <br> esteja ciente de como trabalhamos mediante a esse quesito</p>
+                <div class="btn_sb"><a href="./pages/raças.html">SAIBA MAIS</a></div>
+              </div>
+      
+        </section>
+        <hr>
+
+        <section class="banho_tosa">
+          <div class="banho_tosa_esq">
+          <h2 class="section_title3">Banho & Tosa</h2>
+            <p>O banho e tosa é fundamental na prevenção de pulgas, carrapatos e <br> as tosas podem ser indicadas mesmo para cães de pelos <br> curtos, afinal, a tosa higiênica é crucial para o bem estar e saúde do animal.</p>
+            <div class="btn_sb"><a href="./pages/banho.html">SAIBA MAIS</a></div>
+          </div>
+        
+        <div class="cachorrinho_3">
+          <img src="./imagens/beagle.png" alt="">
+        </div>
+        </section>
+
+        <hr>
+        
+        <section class="clinica">
+          <div class="cachorrinho_4">
+            <img src="./imagens/golden_clinico.png" alt="">
+          </div>
+          <div class="clinica_dir">
+            <h2 class="section_title4">Clínica</h2>
+            <p>Clínica especializada que utiliza dos melhores <br> profissionais capacitados no atendimento aos pets</p>
+            <div class="btn_sb"><a href="./pages/clinica.html">SAIBA MAIS</a></div>
+          </div>
+        </section>
+        <hr>
+      </div>
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="top_footer">
+          <div class="input_container">
+            <label for="email"
+              >Cadastre seu email para receber atualizações</label
+            >
+            <input
+              placeholder="Digite seu email"
+              type="email"
+              class="footer_input"
+            />
+          </div>
+          <div class="footer_ul_container">
+            <div class="vertical_separator"></div>
+            <ul class="footer_ul">
+              <li class="footer_ul_item"><a class="footer_ul_item" href="./pages/sobre.html">Sobre</a></li>
+              <li class="footer_ul_item"><a class="footer_ul_item" href="./pages/raças.html">Raças</a></li>
+              <li class="footer_ul_item"><a class="footer_ul_item" href="./pages/banho.html">Banho & Tosa </a></li>
+              <li class="footer_ul_item"><a class="footer_ul_item" href="./pages/clinica.html">Clínica</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="horizontal_separator"></div>
+        <div class="bottom_footer"></div>
+          <span 
+            >@Copyright | PetDev | Todos os direitos reservados
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/home.js"></script>
+  </body>
+</html>

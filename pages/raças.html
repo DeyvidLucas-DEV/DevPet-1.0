@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/racas.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <title>DevPet</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="modalContainer">
+      <div class="modalContent">
+        <div class="dogPresentation">
+          <h2 class="modalTitle">Bulldog</h2>
+          <img class="modalImg" src="../imagens/bulldog.png" alt="">
+        </div>
+        <div class="dogInfo">
+          <h3 class="infoTitle">Informações</h3>
+          <p class="washPrice">Preço do banho: R$35,00</p>
+          <p class="shavePrice">Preço da tosa: R$40,00</p>
+          <p class="transportPrice">Preço do transporte: R$20,00</p>
+          <p class="dogFood">Consumo de ração: R$10,00</p>
+          <p class="hydration">Hidratação: R$30,00</p>
+          <p class="straightening">Alisamento: R$20,00</p>
+        </div>
+      </div>
+
+      <button class="closeButton">Fechar</button>
+    </div>
+  </div>
+  <nav>
+    <div class="nav_bar">
+      <div>
+        <a href="#"><img src="../imagens/logo_prin.png" class="logo" alt="" /></a>
+      </div>
+      <div class="mid_bar">
+        <ul id="menu_nav">
+          <li class="items_nav"><a href="../index.html">HOME</a></li>
+          <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+          <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+          <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+          <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+        </ul>
+      </div>
+      <button id="botao_contato"><a href="./contato.html">Contato</a></button>
+      
+      <div class="mobileMenuIcon">
+        <button onclick="menuShow()"><img src="../imagens/menu_black_logo.png" alt=""></button>
+      </div>
+    </div>
+    <div class="mobileMenu">
+      <ul id="menu_nav_mobile">
+        <li class="items_nav"><a href="../index.html">HOME</a></li>
+        <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+        <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+        <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+        <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+      </ul> 
+      <button id="botao_contato_mobile"><a href="contato.html">Contato</a></button>
+      </div>
+  </nav>
+  
+
+
+  <h2 class="titulo_principal">Raças</h2>
+  <hr />
+
+  <header class="pesquisar_card">
+    <div class="pesquisar">
+      <div class="itens_input">
+        <div class="lupa"><img src="../imagens/lupa.png" alt="" /></div>
+        <input class="input_pesq" type="text" placeholder="Pesquise a raça" />
+      </div>
+    </div>
+  </header>
+  <section class="container_grid">
+    <div class=" dogCard">
+      <h3>Husky Siberiano</h3>
+      <img class="gridImg" src="../imagens/husky.png" alt="" />
+    </div>
+    <div class=" dogCard">
+      <h3>Doberman</h3>
+      <img class="gridImg" src="../imagens/doberman_raça.png" alt="" />
+    </div>
+    <div class="dogCard">
+      <h3>Spitz Alemão</h3>
+      <img src="../imagens/spitz.jpg" class="spitz" alt="" />
+    </div>
+    <div class="dogCard">
+      <h3>Pinscher</h3>
+      <img class="gridImg" src="../imagens/pinscher.png" alt="" />
+    </div>
+    <div class="dogCard">
+      <h3>Poodle</h3>
+      <img class="gridImg" src="../imagens/poodle.png" alt="" />
+    </div>
+    <div class="dogCard">
+      <h3>Yorkshire</h3>
+      <img class="gridImg" src="../imagens/yorkshire.png" alt="" />
+    </div>
+    <div class=" dogCard">
+      <h3>Border Collie</h3>
+      <img class="gridImg" src="../imagens/border_collie.png" alt="" />
+    </div>
+    <div class=" dogCard">
+      <h3>Bulldog</h3>
+      <img class="gridImg" src="../imagens/bulldog.png" alt="" />
+    </div>
+    <div class=" dogCard">
+      <h3>Pug</h3>
+      <img class="gridImg" src="../imagens/pug.png" alt="" />
+    </div>
+    <div class="dogCard">
+      <h3>Pastor Alemão</h3>
+      <img class="gridImg" src="../imagens/pastor_alemao.png" alt="" />
+    </div>
+    <div class="dogCard">
+      <h3>Maltês</h3>
+      <img class="gridImg" src="../imagens/maltes.png" alt="" />
+    </div>
+    <div class="dogCard">
+      <h3>Golden Retriever</h3>
+      <img class="gridImg" src="../imagens/golden.png" alt="" />
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="top_footer">
+        <div class="input_container">
+          <label for="email">Cadastre seu email para receber atualizações</label>
+          <input placeholder="Digite seu email" type="email" class="footer_input" />
+        </div>
+        <div class="footer_ul_container">
+          <div class="vertical_separator"></div>
+          <ul class="footer_ul">
+            <li class="footer_ul_item"><a class="footer_ul_item" href="sobre.html">Sobre</a></li>
+            <li class="footer_ul_item"><a class="footer_ul_item" href="raças.html">Raças</a></li>
+            <li class="footer_ul_item"><a class="footer_ul_item" href="banho.html">Banho & Tosa </a>
+            </li>
+            <li class="footer_ul_item"><a class="footer_ul_item" href="clinica.html">Clínica</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="horizontal_separator"></div>
+      <div class="bottom_footer"></div>
+      <span>@Copyright | PetDev | Todos os direitos reservados
+      </span>
+    </div>
+    </div>
+  </footer>
+  <script src="../scripts/raças.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.nav_bar {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.mobileMenuIcon {
+    display: none;
+  }
+
+  #botao_contato{
+    margin-left: 20px;
+  }
+
+
+
+  #botao_contato a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .mobileMenu {
+    display: none;
+  }
+
+.logo {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.mid_bar {
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+}
+
+#menu_nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 3%;
+    width: 100%;
+    list-style: none;
+    font-size: 17px;
+}
+
+#menu_nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.items_nav {
+    position: relative;
+}
+
+.items_nav::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 4px;
+    scale: 0.1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+
+.items_nav:hover::before {
+    scale: 1;
+}
+
+.items_nav:hover {
+    transition: transform 0.5s;
+    transform: scale(1.2);
+}
+
+
+
+#botao_contato {
+    color: white;
+    background-color: #F63B4F;
+    text-decoration: none;
+    margin: 0 70px 0 0px;
+    border: 0;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+
+.titulo_contato{
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.formulario{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.formInput{
+    width: 370px;
+    height: 30px;
+}
+#mensagem{
+    resize: none;
+}
+.submitButton{
+    height: 40px;
+    width: 100px;
+    background-color: #F63B4F;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 950px){
+
+
+    .nav_bar{
+      background-color: #edf0f0 ;
+      height: 100px;
+    }
+
+    .logo{
+        width: 200px;
+    }
+
+     .mobileMenuIcon {
+        display: block;
+        margin-right: 20px;
+      }
+    
+      .mobileMenu {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        background-color: #edf0f0 ;
+      }
+      .mobileMenuIcon img {
+        width: 40px;
+        height: 40px;
+      }
+      .mobileMenuIcon button {
+        background-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
+      }
+    
+      #menu_nav_mobile {
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+      }
+    
+      #menu_nav_mobile a {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        text-decoration: none;
+        text-decoration: none;
+        color: black;
+      }
+    
+      #botao_contato_mobile {
+        border: none;
+        margin-top: 15px;
+        margin-bottom: 40px;
+      }
+    
+      #botao_contato_mobile a {
+        color: white;
+        text-decoration: none;
+        background-color: red;
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 20px;
+      }
+      .open {
+        display: block;
+       
+        font-size: 20px;
+      }
+      .items_nav::before {
+        display: none;
+      }
+
+      .mid_bar{
+        display: none;
+    }
+
+    #menu_nav {
+        display: none;
+      }
+    
+      #botao_contato {
+        display: none;
+      }
+    
+      .nav_bar {
+        justify-content: space-between;
+      }
+}

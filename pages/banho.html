@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/banho.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>DevPet</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_bar">
+        <div>
+          <a href="#"><img src="../imagens/logo.png" class="logo" alt="" /></a>
+        </div>
+        <div class="mid_bar">
+          <ul id="menu_nav">
+            <li class="items_nav"><a href="../index.html">HOME</a></li>
+            <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+            <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+            <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+            <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+          </ul>
+        </div>
+        <button id="botao_contato"><a href="contato.html">Contato</a></button>
+         <!-- Inicio da nav mobile -->
+         <div class="mobileMenuIcon">
+          <button onclick="menuShow()">
+            <img src="../imagens/menu_black_logo.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="mobileMenu">
+        <ul id="menu_nav_mobile">
+          <li class="items_nav"><a href="../index.html">HOME</a></li>
+            <li class="items_nav"><a href="sobre.html">SOBRE</a></li>
+            <li class="items_nav"><a href="raças.html">RAÇAS</a></li>
+            <li class="items_nav"><a href="banho.html">BANHO & TOSA</a></li>
+            <li class="items_nav"><a href="clinica.html">CLÍNICA</a></li>
+          
+          </li>
+        </ul>
+        <button id="botao_contato_mobile">
+          <a href="contato.html">Contato</a>
+        </button>
+      </div>
+      <!-- Fim da nav mobile -->
+    </nav>
+    
+    <h2 class="titulo_principal">Banho & Tosa</h2>
+    <hr />
+    <main>
+      <div class="content">
+        <div class="top_titulo">
+          <h2>A higiene pet é indicada por veterinários</h2>
+        </div>
+        <div class="top_content">
+          <ul class="banho_ul">
+            <li class="banho_li">
+              O banho é um aliado no tratamento de doenças no pet.
+            </li>
+            <li class="banho_li">
+              A tosa higiênica facilita a limpeza do pet e evita a contaminação
+              do ambiente.
+            </li>
+            <li class="banho_li">
+              O banho ajuda a manter a pelagem bem cuidada e evita maus cheiros.
+            </li>
+            <li class="banho_li">
+              A escovação do pelo reduz a queda habitual e elimina os nós.
+            </li>
+          </ul>
+        </div>
+        <div class="bottom_content">
+          <div class="texto_container">
+            <h2 class="agenda_titulo">Agenda</h2>
+            <p>Além dessa opção também é possível controlar as vacinas, inserir
+            encaixe, ter a visualização da agenda por dia e semana, cadastros
+            como: cor do agendamento e legendas, duração padrão do serviço,
+            comissão do prestador sobre serviços e produtos, horários de
+            trabalho, períodos não trabalhados e muito mais. Temos o sistema ERP
+            para petshop que falta na sua rotina!</p>
+          </div>
+          <div class="imagem_container">
+            <img class="image_open" src="../imagens/open.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <section class="etapas_content">
+        <h2 class="etapas_titulo">Etapas do banho e tosa</h2>
+        <div class="etapas">
+          <div class="etapa_container">
+            <div class="etapa">
+              <img src="../imagens/banheira.png" alt="" />
+            </div>
+            <h3>Pré-banho</h3>
+          </div>
+          <div class="etapa_container">
+            <div class="etapa"><img src="../imagens/sabao.png" alt="" /></div>
+            <h3>Banho Neutro</h3>
+          </div>
+          <div class="etapa_container">
+            <div class="etapa"><img src="../imagens/perfume.png" alt="" /></div>
+            <h3>Perfume e finalização</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="top_footer">
+          <div class="input_container">
+            <label for="email"
+              >Cadastre seu email para receber atualizações</label
+            >
+            <input
+              placeholder="Digite seu email"
+              type="email"
+              class="footer_input"
+            />
+          </div>
+          <div class="footer_ul_container">
+            <div class="vertical_separator"></div>
+            <ul class="footer_ul">
+              <li class="footer_ul_item"><a class="footer_ul_item" href="sobre.html">Sobre</a></li>
+              <li class="footer_ul_item"><a class="footer_ul_item" href="raças.html">Raças</a></li>
+              <li class="footer_ul_item"><a class="footer_ul_item" href="banho.html">Banho & Tosa </a></li>
+              <li class="footer_ul_item"><a class="footer_ul_item" href="clinica.html">Clínica</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="horizontal_separator"></div>
+        <div class="bottom_footer"></div>
+          <span 
+            >@Copyright | PetDev | Todos os direitos reservados
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/home.js"></script>
+  </body>
+</html>

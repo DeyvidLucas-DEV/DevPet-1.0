@@ -1,0 +1,838 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav_bar {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffc632;
+}
+
+.logo {
+  width: 200px;
+}
+
+.mid_bar {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-around;
+}
+
+#menu_nav {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  list-style: none;
+  font-size: 17px;
+}
+
+.mobileMenuIcon {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+#menu_nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.items_nav {
+  position: relative;
+}
+
+.items_nav::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 4px;
+  scale: 0.1;
+  transform-origin: left;
+  transition: scale 0.25s;
+}
+
+.items_nav:hover::before {
+  scale: 1;
+}
+
+.items_nav:hover {
+  transition: transform 0.5s;
+  transform: scale(1.2);
+}
+
+#botao_contato {
+  color: white;
+  background-color: #f63b4f;
+  text-decoration: none;
+  border: 0;
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#botao_contato a {
+  text-decoration: none;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contato_container {
+  height: 700px;
+  width: 400px;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+.contato_titulo {
+  border-radius: 10px 10px 0 0;
+  background-color: #ffc632;
+  border-top: 1px solid black;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input_container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.contato_input {
+  width: 300px;
+  height: 30px;
+  border-radius: 8px;
+}
+.conteudo_header {
+  background-color: #ffc632;
+  height: 580px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.contato_label {
+  color: black;
+}
+.botao_enviar {
+  width: 270px;
+  height: 40px;
+  border: 0;
+  color: white;
+  background-color: #f63b4f;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.texto_esq {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn_orcamento {
+  margin: 70px;
+  box-shadow: black (1px 1px);
+  width: 100%;
+}
+
+.btn_orcamento a {
+  text-decoration: none;
+  color: white;
+  background-color: #f63d3d;
+  padding: 20px 52px;
+  border-radius: 110px;
+  text-align: center;
+}
+
+.conteudo {
+  height: 2000px;
+  margin-bottom: 2px;
+}
+
+.cachorro_1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.sobre {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  align-items: center;
+}
+
+.btn_sb {
+  margin-top: 30px;
+  box-shadow: black (1px 1px);
+  margin-bottom: 40px;
+}
+
+.btn_sb a {
+  text-decoration: none;
+  color: white;
+  background-color: #f63d3d;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.section_title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cachorrinho_01 {
+  justify-content: space-around;
+}
+
+.cachorrinho_1 img {
+  margin-top: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.imagem_dog {
+  background-image: url("../imagens/patinhas.png");
+  background-position: 50% 20%;
+  background-size: 120%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.section_title2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.racas_dir {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  align-items: center;
+}
+
+.racas_dir img {
+  width: 100%;
+  height: 100%;
+}
+
+.cachorrinho_2 img {
+  margin-top: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.racas_dir2 {
+  text-align: end;
+  display: table-column;
+  height: 260px;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.banho_tosa {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  align-items: center;
+}
+
+.banho_tosa_esq {
+  text-align: start;
+  font-size: 18px;
+  justify-content: space-around;
+  display: table-column;
+  text-align: left;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.section_title3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cachorrinho_3 img {
+  margin-top: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.clinica {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  align-items: center;
+}
+
+.clinia_dir {
+  text-align: end;
+  display: table-column;
+  height: 260px;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.section_title4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: end;
+}
+
+.cachorrinho_4 img {
+  margin-top: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: #ffc632;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top_footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.footer_input {
+  width: 250px;
+  height: 30px;
+  border-radius: 12px;
+  padding-left: 10px;
+  border: 0;
+  margin-top: 5px;
+}
+
+.footer_ul_container {
+  display: flex;
+}
+
+.vertical_separator {
+  height: 70px;
+  margin-right: 20px;
+  width: 2px;
+  background-color: white;
+}
+
+.horizontal_separator {
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.footer_ul {
+  list-style: none;
+  color: white;
+}
+
+.footer_ul_item {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.footer_ul_item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.footer_copyright {
+  color: white;
+}
+
+@media screen and (max-width: 1180px) {
+  #menu_nav {
+    font-size: 15px;
+    gap: 3%;
+  }
+
+  #botao_contato {
+    width: 100px;
+    font-size: 17px;
+    padding: 10px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #menu_nav {
+    gap: 2%;
+    width: 60%;
+  }
+  .texto_esq h1 {
+    font-size: 30px;
+  }
+  .sobre {
+    font-size: 15px;
+  }
+
+  .clinica {
+    font-size: 15px;
+  }
+
+  .banho_tosa {
+    font-size: 15px;
+  }
+
+  .racas_dir {
+    font-size: 15px;
+  }
+
+  .conteudo_header {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .texto_dir {
+    width: 50%;
+    height: 69%;
+  }
+
+  .imagem_dog {
+    width: 400px;
+    height: 500px;
+  }
+
+  .imagem_dog img {
+    width: 420px;
+    height: 490px;
+  }
+
+  .cachorro_1 {
+    width: 200px;
+  }
+
+  .cachorro_1 img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .cachorrinho_2 {
+    width: 200px;
+  }
+
+  .cachorrinho_2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cachorrinho_3 {
+    width: 200px;
+  }
+
+  .cachorrinho_3 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cachorrinho_4 {
+    width: 200px;
+  }
+
+  .cachorrinho_4 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .conteudo_header {
+    justify-content: space-around;
+  }
+
+  .texto_esq h1 {
+    font-size: 25px;
+  }
+
+  .section_title {
+    font-size: 22px;
+  }
+
+  .section_title2 {
+    font-size: 22px;
+  }
+
+  .section_title3 {
+    font-size: 22px;
+  }
+
+  .section_title4 {
+    font-size: 22px;
+  }
+
+  .sobre_esq {
+    font-size: 15px;
+  }
+  .racas_dir p {
+    font-size: 15px;
+  }
+
+  .banho_tosa_esq p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #menu_nav {
+    width: 60%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  #botao_contato {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .mid_bar {
+    margin: 0px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .conteudo_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu_nav {
+    display: none;
+  }
+
+  #botao_contato {
+    display: none;
+  }
+
+  .nav_bar {
+    justify-content: space-between;
+  }
+
+  .conteudo_header {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0%;
+  }
+  
+  .conteudo{
+    height: 100%;
+  }
+
+  .texto_dir {
+    width: 40%;
+    height: 50%;
+    margin-bottom: 0%;
+  }
+
+  .imagem_dog {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imagem_dog img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .texto_esq {
+    width: 100%;
+    margin-bottom: 0%;
+  }
+
+  .texto_esq h1 {
+    font-size: 30px;
+  }
+
+  .nav_bar {
+    width: 100%;
+  }
+  .nav_bar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mobileMenuIcon {
+    display: block;
+  }
+
+  .mobileMenu {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mobileMenuIcon img {
+    width: 40px;
+    height: 40px;
+  }
+  .mobileMenuIcon button {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+
+  #menu_nav_mobile {
+    padding: 15px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #menu_nav_mobile a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  #botao_contato_mobile {
+    border: none;
+    padding: 10px;
+    background-color: #ffc632;
+
+    margin-bottom: 40px;
+  }
+
+  #botao_contato_mobile a {
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 15px;
+    padding: 15px;
+
+    font-size: 20px;
+  }
+  .open {
+    display: block;
+    background-color: #ffc632;
+    font-size: 20px;
+  }
+  .items_nav::before {
+    display: none;
+  }
+
+  .cachorrinho_3 {
+    display: none;
+  }
+
+
+
+  .sobre {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sobre_esq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+
+  .cachorro_1 img {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .racas_dir {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+
+  .racas_dir2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .cachorrinho_2 {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    display: none;
+    
+  }
+
+  .cachorrinho_2 img {
+    display: none;
+    width: 50%;
+    height: 100%;
+  }
+
+  .banho_tosa {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .banho_tosa_esq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .clinica {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .clinica_dir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .clinica_dir p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cachorrinho_4 {
+    width: 30%;
+    margin-top: 20px;
+  }
+
+  .cachorrinho_4 img {
+    display: none;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .top_footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagem_dog {
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+  }
+
+  .texto_dir{
+    width: 50%;
+  }
+
+  .input_container {
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

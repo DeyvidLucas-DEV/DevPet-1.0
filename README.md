@@ -8,6 +8,7 @@ Ao explorar o site, você encontrará uma ampla gama de serviços e produtos pro
 
 - [@DeyvidLucas-DEV](https://github.com/DeyvidLucas-DEV)
 - [@Tonybrh](https://github.com/Tonybrh)
+- [@pedroLhb](https://github.com/pedroLhb)
 
 
 ![Logo](https://i.imgur.com/DjmuCUj.png)

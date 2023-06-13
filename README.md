@@ -7,7 +7,7 @@ Ao explorar o site, você encontrará uma ampla gama de serviços e produtos pro
 ## Autores
 
 - [@DeyvidLucas-DEV](https://github.com/DeyvidLucas-DEV)
-
+- [@Tonybrh](https://github.com/Tonybrh)
 
 
 ![Logo](https://i.imgur.com/DjmuCUj.png)
